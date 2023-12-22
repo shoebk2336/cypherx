@@ -29,3 +29,7 @@ Check out the live demo: [Kanban Application](https://cypherx-green.vercel.app/)
 2. Navigate to Folder
    ```bash
    cd cypherx
+
+3. Start the Server
+   ```bash
+   npm run dev
