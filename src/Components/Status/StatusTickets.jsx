@@ -10,11 +10,11 @@ import { Heading } from "../Heading/Heading"
 
 export const Status_Tickets=()=>{
     const {Data}=useContext(context)
-    const Headings=[{head:'Backlog',icon:<IconCircleDotted size="16px" />},
-    {head:'Todo',icon:<IconCircle size="16px" />},
-    {head:'In progress',icon:<IconCircle size="16px"/>},
-    {head:'Done',icon:<IconCircleCheckFilled size="16px" />},
-    { head:'Cancelled',icon:<IconCircleXFilled size="16px" />}]
+    const Headings=[{head:'Backlog',icon:<IconCircleDotted size="16px"  color="grey" />},
+    {head:'Todo',icon:<IconCircle size="16px" color="grey" />},
+    {head:'In progress',icon:<IconCircle size="16px" color="grey"/>},
+    {head:'Done',icon:<IconCircleCheckFilled size="16px" style={{color:"blue"}} />},
+    { head:'Cancelled',icon:<IconCircleXFilled size="16px" style={{color:"grey"}} />}]
 
     const Filter_Ticket=(status)=>{
         const Filtered_Ticket=Data?.tickets?.filter((ticket)=>
@@ -29,11 +29,13 @@ export const Status_Tickets=()=>{
             <Grid.Col key={index}
             span='auto'
             >
-           
-            <Heading heading={status?.head}/>
+        
+            <Heading heading={status?.head}
+            leftIcon={status?.icon}
+            />
             <Space h='xl'/>
             <SimpleGrid>
-            {Filter_Ticket(status)?.map((ticket,index)=>
+            {Filter_Ticket(status?.head)?.map((ticket,index)=>
                 <Ticket_Card key={index}
                 data={ticket}
                 />

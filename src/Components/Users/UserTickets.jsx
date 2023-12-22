@@ -1,9 +1,12 @@
-import { Grid, SimpleGrid, Space, Text } from "@mantine/core"
+import { Box, Grid, SimpleGrid, Space, Text } from "@mantine/core"
 import { useContext } from "react"
 import { context } from "../ContextApi/ContextApi"
 import { Ticket_Card } from "../Card/Card"
-import { IconLineDotted, IconPlus } from "@tabler/icons-react"
+import { IconCircleFilled, IconLineDotted, IconPlus } from "@tabler/icons-react"
 import { Heading } from "../Heading/Heading"
+
+
+
 
 
 export const User_Tickets=()=>{
@@ -26,7 +29,9 @@ export const User_Tickets=()=>{
             span='auto'
             key={index}>
             
-            <Heading heading={user?.name}/>
+            <Heading heading={user?.name}
+            leftIcon={<IconCircleFilled style={{color:"#f5c842"}} size='15px'/>}
+            />
             <Space h='xl'/>
             <SimpleGrid>
             {Filter_Tickets(user?.id)?.map((ticket,index)=>

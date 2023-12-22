@@ -19,18 +19,34 @@ export const Ticket_Card=(props)=>{
         fw='500'
         ta='left'
         lh='20px'
-        >{title}</Text>
+        display='flex'
+        style={{alignItems:"center",justifyContent:"space-between"}}
+        >
+        <IconCircleFilled
+        size='15px'
+        style={{
+            color:"#f5c842",
+            marginRight:"10px"
+            
+            
+        }}
+        />
+        {title}</Text>
         <Space h='md'/>
         <Flex
-        alignItems='center'
-        justify='space-between'
+        gap='10px'
+        alignItems="center"
         >
         <IconAntennaBars4
-        size='26px'
+        color="grey"
+        size='27px'
+        display='flex'
+        alignItems='center'
+        
         style={{
-            border:'1px solid gray',
+            border:'0.5px solid gray',
             borderRadius:"4px",
-            p:"5px",
+            
         }}
         />
 
