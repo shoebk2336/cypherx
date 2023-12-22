@@ -25,3 +25,7 @@ Check out the live demo: [Kanban Application](https://cypherx-green.vercel.app/)
 
    ```bash
    https://github.com/shoebk2336/cypherx.git
+
+2. Navigate to Folder
+   ```bash
+   cd cypherx
