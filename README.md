@@ -27,8 +27,8 @@ Check out the live demo: [CypherX Kanban Application](https://cypherx-green.verc
 npm install
 
 
-4. Start the Server
-   ```bash
-   npm run dev
+4.Start Server
+```bash
+npm run dev
 
 
