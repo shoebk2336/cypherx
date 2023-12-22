@@ -27,7 +27,7 @@ export const Status_Tickets=()=>{
         <Grid>
         {Headings.map((status,index)=>
             <Grid.Col key={index}
-            span='auto'
+            span={{sm:'auto',base:12}}
             >
         
             <Heading heading={status?.head}

@@ -26,7 +26,7 @@ export const User_Tickets=()=>{
         {Data?.users?.map((user,index)=>
             <Grid.Col 
             ta='center'
-            span='auto'
+            span={{sm:'auto',base:12}}
             key={index}>
             
             <Heading heading={user?.name}

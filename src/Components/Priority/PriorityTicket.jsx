@@ -29,7 +29,7 @@ export const Priority_Tickets=()=>{
     <Grid>
     {Headings.map((heading,index)=>
         <Grid.Col key={index}
-        span='auto'
+        span={{sm:'auto',base:12}}
         >
         
         <Heading heading={heading?.head}
