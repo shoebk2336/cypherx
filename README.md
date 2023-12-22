@@ -1,6 +1,6 @@
-# Kanban Application with React + Vite
+# CypherX Kanban Application with React + Vite
 
-Welcome to the documentation for the Kanban application built with React, Vite, and Mantine UI.
+Welcome to the documentation for the CypherX Kanban application built with React, Vite, and Mantine UI.
 
 ## Project Overview
 
@@ -8,16 +8,8 @@ This project is a Kanban board application that allows users to manage tasks in 
 
 ## Live Demo
 
-Check out the live demo: [Kanban Application](https://cypherx-green.vercel.app/)
+Check out the live demo: [CypherX Kanban Application](https://cypherx-green.vercel.app/)
 
-## Table of Contents
-
-1. [Installation](#installation)
-2. [Usage](#usage)
-3. [Project Structure](#project-structure)
-4. [Dependencies](#dependencies)
-5. [Contributing](#contributing)
-6. [License](#license)
 
 ## Installation
 
@@ -30,6 +22,10 @@ Check out the live demo: [Kanban Application](https://cypherx-green.vercel.app/)
    ```bash
    cd cypherx
 
-3. Start the Server
+3.Install dependencies
+```bash
+npm install
+
+4. Start the Server
    ```bash
    npm run dev
