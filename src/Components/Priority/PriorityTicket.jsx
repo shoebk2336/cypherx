@@ -25,7 +25,7 @@ export const Priority_Tickets=({Order})=>{
             return Sorted_Ticket
         }
         else{
-            const Sorted_Ticket=FilteredData.sort((a,b)=>a.title.localeCompare(b.title))
+            const Sorted_Ticket=FilteredData?.sort((a,b)=>a.title.localeCompare(b.title))
             return Sorted_Ticket
         }
         

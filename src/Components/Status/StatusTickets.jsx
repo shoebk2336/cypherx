@@ -25,7 +25,7 @@ export const Status_Tickets=({Order})=>{
             return Sorted_Ticket
         }
         else{
-            const Sorted_Ticket=Filtered_Ticket.sort((a,b)=>a.title.localeCompare(b.title))
+            const Sorted_Ticket=Filtered_Ticket?.sort((a,b)=>a.title.localeCompare(b.title))
             return Sorted_Ticket
         }
     }

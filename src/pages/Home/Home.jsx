@@ -3,7 +3,7 @@ import { Priority_Tickets } from "../../Components/Priority/PriorityTicket"
 import { Status_Tickets } from "../../Components/Status/StatusTickets"
 import { User_Tickets } from "../../Components/Users/UserTickets"
 import { CustomMenu } from "../../Components/Menu/Menu"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 
 export const Home=()=>{
