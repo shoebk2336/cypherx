@@ -14,11 +14,11 @@ const SwitchFun=()=>{
     
     switch (Group) {
         case "Priority":
-        return <Priority_Tickets />;
+        return <Priority_Tickets Order={Order} />;
         case "Status":
-        return <Status_Tickets />;
+        return <Status_Tickets Order={Order} />;
         case "User":
-        return <User_Tickets />;
+        return <User_Tickets Order={Order} />;
         default:
         console.log('done');
         return null; // or any other default value

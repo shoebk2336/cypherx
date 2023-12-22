@@ -9,13 +9,20 @@ import { Heading } from "../Heading/Heading"
 
 
 
-export const User_Tickets=()=>{
+export const User_Tickets=({Order})=>{
     const {Data}=useContext(context)
     const Filter_Tickets=(userID)=>{
     const Filtered_Ticket=Data?.tickets?.filter((ticket)=>
             ticket?.userId==userID
     )
-    return (Filtered_Ticket)
+    if(Order=='Priority'){
+        const Sorted_Ticket=Filtered_Ticket?.sort((a,b)=>b.priority-a.priority)
+        return Sorted_Ticket
+    }
+    else{
+        const Sorted_Ticket=Filtered_Ticket.sort((a,b)=>a.title.localeCompare(b.title))
+        return Sorted_Ticket
+    }
     }
 
     

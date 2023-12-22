@@ -6,7 +6,7 @@ import { Heading } from "../Heading/Heading"
 import { IconAlertSquareFilled, IconAntennaBars1, IconAntennaBars2, IconAntennaBars3, IconAntennaBars4, IconAntennaBars5, IconLineDashed } from "@tabler/icons-react"
 
 
-export const Priority_Tickets=()=>{
+export const Priority_Tickets=({Order})=>{
     const {Data}=useContext(context)
     const Headings=[
     {head:'No Priority',val:0,icon:<IconLineDashed color="grey" size='20px' />,count:0},
@@ -20,8 +20,15 @@ export const Priority_Tickets=()=>{
     const Priority_Filter=(priority)=>{
         const FilteredData=Data?.tickets.filter((ticket)=>
         ticket.priority==priority)
+        if(Order=='Priority'){
+            const Sorted_Ticket=FilteredData?.sort((a,b)=>b.priority-a.priority)
+            return Sorted_Ticket
+        }
+        else{
+            const Sorted_Ticket=FilteredData.sort((a,b)=>a.title.localeCompare(b.title))
+            return Sorted_Ticket
+        }
         
-        return FilteredData
     }
 
     

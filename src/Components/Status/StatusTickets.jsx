@@ -8,7 +8,7 @@ import { Heading } from "../Heading/Heading"
 
 
 
-export const Status_Tickets=()=>{
+export const Status_Tickets=({Order})=>{
     const {Data}=useContext(context)
     const Headings=[{head:'Backlog',icon:<IconCircleDotted size="16px"  color="grey" />},
     {head:'Todo',icon:<IconCircle size="16px" color="grey" />},
@@ -20,7 +20,14 @@ export const Status_Tickets=()=>{
         const Filtered_Ticket=Data?.tickets?.filter((ticket)=>
         ticket.status==status
         )
-        return Filtered_Ticket
+        if(Order=='Priority'){
+            const Sorted_Ticket=Filtered_Ticket?.sort((a,b)=>b.priority-a.priority)
+            return Sorted_Ticket
+        }
+        else{
+            const Sorted_Ticket=Filtered_Ticket.sort((a,b)=>a.title.localeCompare(b.title))
+            return Sorted_Ticket
+        }
     }
 
     return(<>
