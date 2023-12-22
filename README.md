@@ -22,14 +22,13 @@ Check out the live demo: [CypherX Kanban Application](https://cypherx-green.verc
    ```bash
    cd cypherx
 
-3. Navigate to Folder
+3. .Install dependencies
    ```bash
-   cd cypherx
+   npm install
    
 
-3.Install dependencies
-  ```bash
-npm install
+
+
 
 
 
