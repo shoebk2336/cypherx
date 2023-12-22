@@ -22,15 +22,11 @@ Check out the live demo: [CypherX Kanban Application](https://cypherx-green.verc
    ```bash
    cd cypherx
 
-3. .Install dependencies
+3. Install dependencies
    ```bash
    npm install
-   
 
-
-
-
-
-
-
-
+4. Start server
+   ```bash
+   npm run dev
+ 
