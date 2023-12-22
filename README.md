@@ -24,4 +24,4 @@ Check out the live demo: [Kanban Application](https://cypherx-green.vercel.app/)
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/kanban-app.git
+   https://github.com/shoebk2336/cypherx.git
